@@ -6,18 +6,18 @@ import {
 } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { FaGithub, FaExclamationTriangle } from 'react-icons/fa';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 
 const carouselStyles = {
     ".carousel .slide img": {
         maxHeight: "400px",
-        objectFit: "contain", 
+        objectFit: "contain",
         borderRadius: "8px"
     },
     ".carousel .control-dots .dot": {
-        background: "#3182ce", 
+        background: "#3182ce",
     }
 };
 
@@ -71,52 +71,60 @@ export default function Projectslist({ title, projects }) {
                                 <Heading size="lg" color="slate.800">{selectedProject.title}</Heading>
                             </ModalHeader>
                             <ModalCloseButton />
-                            
+
                             <ModalBody pt={6} pb={8}>
                                 <Box borderRadius="lg" overflow="hidden" shadow="md" mb={6} bg="gray.900">
-                                    
-    
+
+
                                     {selectedProject.videoUrl ? (
                                         <AspectRatio ratio={16 / 9}>
                                             <iframe title={selectedProject.title} src={selectedProject.videoUrl} allowFullScreen />
                                         </AspectRatio>
-                                    ) : 
-                                  
-                                    (selectedProject.images && selectedProject.images.length > 0) ? (
-                                        <Box sx={carouselStyles}>
-                                            <Carousel 
-                                                showArrows={true} 
-                                                showStatus={false} 
-                                                showThumbs={false} 
-                                                infiniteLoop={true} 
-                                                autoPlay={true}
-                                                interval={5000}
-                                            >
-                                                {selectedProject.images.map((imgUrl, index) => (
-                                                    <Image 
-                                                        key={index} 
-                                                        src={imgUrl} 
-                                                        alt={`Screenshot ${index + 1} do projeto ${selectedProject.title}`} 
-                                                    />
-                                                ))}
-                                            </Carousel>
-                                        </Box>
-                                    ) : 
-                                    
-                        
-                                    (
-                                        <Flex justify="center" align="center" h="250px" direction="column" gap={3}>
-                                            <Icon as={FaExclamationTriangle} color="yellow.400" boxSize={10} />
-                                            <Text color="gray.400" fontSize="sm">
-                                                Visualização indisponível por motivos de confidencialidade corporativa.
-                                            </Text>
-                                        </Flex>
-                                    )}
+                                    ) :
+
+                                        (selectedProject.images && selectedProject.images.length > 0) ? (
+                                            <Box sx={carouselStyles}>
+                                                <Carousel
+                                                    showArrows={true}
+                                                    showStatus={false}
+                                                    showThumbs={false}
+                                                    infiniteLoop={true}
+                                                    autoPlay={true}
+                                                    interval={5000}
+                                                >
+                                                    {selectedProject.images.map((imgUrl, index) => (
+                                                        <Image
+                                                            key={index}
+                                                            src={imgUrl}
+                                                            alt={`Screenshot ${index + 1} do projeto ${selectedProject.title}`}
+                                                        />
+                                                    ))}
+                                                </Carousel>
+                                            </Box>
+                                        ) :
+
+
+                                            (
+                                                <Flex justify="center" align="center" h="250px" direction="column" gap={3}>
+                                                    <Icon as={FaExclamationTriangle} color="yellow.400" boxSize={10} />
+                                                    <Text color="gray.400" fontSize="sm">
+                                                        Visualização indisponível por motivos de confidencialidade corporativa.
+                                                    </Text>
+                                                </Flex>
+                                            )}
                                 </Box>
 
-                                <Text color="gray.600" fontSize="lg" lineHeight="relaxed">
-                                    {selectedProject.description}
-                                </Text>
+                                <VStack align="start" spacing={4} color="gray.600" fontSize="lg" lineHeight="relaxed">
+                                    {Array.isArray(selectedProject.description) ? (
+
+                                        selectedProject.description.map((paragraph, index) => (
+                                            <Text key={index}>{paragraph}</Text>
+                                        ))
+                                    ) : (
+                                       
+                                        <Text>{selectedProject.description}</Text>
+                                    )}
+                                </VStack>
 
                                 <HStack mt={6} spacing={3} flexWrap="wrap">
                                     {selectedProject.tags.map(tag => (
@@ -128,7 +136,7 @@ export default function Projectslist({ title, projects }) {
                             </ModalBody>
 
                             <ModalFooter borderTopWidth="1px" borderColor="gray.100" bg="gray.50">
-            
+
                                 {selectedProject.githubUrl !== "#" && (
                                     <Button as="a" href={selectedProject.githubUrl} target="_blank" leftIcon={<FaGithub />} colorScheme="gray" variant="solid">
                                         Ver Código Fonte

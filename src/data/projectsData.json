@@ -13,9 +13,9 @@
                 ],
                 "videoUrl": null,
                 "images": [
-                    "/public/spaceship_kaggle.jpg",
-                    "/public/spaceship_code.jpg",
-                    "/public/spaceship_accuracy.jpg"
+                    "/public/spaceship_kaggle.png",
+                    "/public/spaceship_code.png",
+                    "/public/spaceship_accuracy.png"
                 ],
                 "githubUrl": "#"
             }
@@ -41,22 +41,46 @@
             {
                 "id": 2,
                 "year": "2026",
-                "title": "Controle Financeiro",
-                "type": "Front-end / Back-end",
-                "description": "Solucionando o problema de não ter controle dos gastos, esse sistema de despesas engloba um input via OCR QRCode de cupons fiscais e input manual, o que agiliza e automatiza a geração de relatórios de receitas. Com FastAPI e PostgreSQL, a aplicação possui o back-end e a comunicação em alta velocidade com foco em uma interface amigável.",
+                "title": "Previsão de Classificação - Spaceship Titanic (Kaggle)",
+                "type": "IA",
+                "description": [
+                    "Situação: Desafio de Machine Learning com uma base de dados complexa e incompleta contendo o perfil de milhares de passageiros.",
+                    "Tarefa: Desenvolver um modelo preditivo capaz de classificar o status final de cada passageiro (transportado ou não).",
+                    "Ação: Construí um pipeline em Python que trata dados nulos (mediana/moda) e aplica Feature Engineering (extração de gasto total, lado da cabine e tamanho do grupo de viagem). Treinei um modelo Random Forest e utilizei GridSearchCV para encontrar a melhor combinação de hiperparâmetros.",
+                    "Resultado: Um modelo de classificação otimizado e automatizado que atingiu aproximadamente 80% de acurácia na base de validação."
+                ],
                 "tags": [
-                    "FastAPI",
-                    "React",
-                    "Docker",
                     "Python",
-                    "PostgreSQL"
+                    "pandas",
+                    "scikit-learn",
+                    "IA",
+                    "RandomForest"
                 ],
                 "videoUrl": null,
                 "images": [
-                    "/public/spaceship_kaggle.jpg",
-                    "/public/spaceship_code.jpg",
-                    "/public/spaceship_accuracy.jpg"
+                    "/public/spaceship_kaggle.png",
+                    "/public/spaceship_code.png",
+                    "/public/spaceship_accuracy.png"
                 ],
+                "githubUrl": "#"
+            },
+            {
+                "id": 3,
+                "year": "2026",
+                "title": "Dynamic TIC-TAC-TOE (Jogo da velha)",
+                "type": "Front-end",
+                "description": [
+                    "Este projeto faz parte da minha jornada de aprendizado em React, utilizando como base estrutural o projeto prático do curso React - The Complete Guide (Academind).",
+                    "Embora a interface e o layout tenham sido fornecidos pelo curso para o estudo de fundamentos, eu refatorei a lógica central de jogabilidade para transformar o Jogo da Velha tradicional em um desafio dinâmico e estratégico.",
+                    "Limite de Peças: Cada jogador pode ter apenas 3 peças no tabuleiro simultaneamente.",
+                    "Lógica FIFO (First-In, First-Out): Ao realizar o 4º movimento, o sistema identifica automaticamente o movimento mais antigo daquele jogador e o remove do tabuleiro."
+                ],
+                "tags": [
+                    "React",
+                    "JavaScript"
+                ],
+                "videoUrl":"https://www.youtube.com/embed/mM37k1XR0ho?si=ToaAYH4ORPXKfykB",
+                "images": [],
                 "githubUrl": "#"
             }
         ]
