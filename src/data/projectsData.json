@@ -1,0 +1,64 @@
+{
+    "Projects": {
+        "Works": [
+            {
+                "id": 101,
+                "year": "2026",
+                "title": "Extrair, Transformar e Carregar (ETL) de Dados",
+                "type": "Automação / Back-end",
+                "description": "Pipeline automatizado de ETL para processamento da base pública de dados da Receita Federal. O fluxo realiza a extração dos dados governamentais, converte os arquivos massivos para o formato estruturado Parquet (visando alta performance de leitura) e disponibiliza o dataset otimizado no servidor para consumo de sistemas internos.",
+                "tags": [
+                    "Python",
+                    "Docker"
+                ],
+                "videoUrl": null,
+                "images": [
+                    "/public/spaceship_kaggle.jpg",
+                    "/public/spaceship_code.jpg",
+                    "/public/spaceship_accuracy.jpg"
+                ],
+                "githubUrl": "#"
+            }
+        ],
+        "MyProjects": [
+            {
+                "id": 1,
+                "year": "2026",
+                "title": "Controle Financeiro",
+                "type": "Front-end / Back-end",
+                "description": "Solucionando o problema de não ter controle dos gastos, esse sistema de despesas engloba um input via OCR QRCode de cupons fiscais e input manual, o que agiliza e automatiza a geração de relatórios de receitas. Com FastAPI e PostgreSQL, a aplicação possui o back-end e a comunicação em alta velocidade e segurança com foco em uma interface amigável.",
+                "tags": [
+                    "FastAPI",
+                    "React",
+                    "Docker",
+                    "Python",
+                    "PostgreSQL"
+                ],
+                "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "images": [],
+                "githubUrl": "#"
+            },
+            {
+                "id": 2,
+                "year": "2026",
+                "title": "Controle Financeiro",
+                "type": "Front-end / Back-end",
+                "description": "Solucionando o problema de não ter controle dos gastos, esse sistema de despesas engloba um input via OCR QRCode de cupons fiscais e input manual, o que agiliza e automatiza a geração de relatórios de receitas. Com FastAPI e PostgreSQL, a aplicação possui o back-end e a comunicação em alta velocidade com foco em uma interface amigável.",
+                "tags": [
+                    "FastAPI",
+                    "React",
+                    "Docker",
+                    "Python",
+                    "PostgreSQL"
+                ],
+                "videoUrl": null,
+                "images": [
+                    "/public/spaceship_kaggle.jpg",
+                    "/public/spaceship_code.jpg",
+                    "/public/spaceship_accuracy.jpg"
+                ],
+                "githubUrl": "#"
+            }
+        ]
+    }
+}
