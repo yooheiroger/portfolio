@@ -82,9 +82,9 @@
                 ],
                 "videoUrl": null,
                 "images": [
-                    "/public/spaceship_kaggle.png",
-                    "/public/spaceship_code.png",
-                    "/public/spaceship_accuracy.png"
+                    "portfolio/public/spaceship_kaggle.png",
+                    "portfolio/public/spaceship_code.png",
+                    "portfolio/public/spaceship_accuracy.png"
                 ],
                 "githubUrl": "#"
             },
@@ -123,8 +123,8 @@
                 ],
                 "videoUrl": null,
                 "images": [
-                    "/public/restaurante_pdf_excel.png",
-                    "/public/restaurante_pdf_extração2.png"
+                    "portfolio/public/restaurante_pdf_excel.png",
+                    "portfolio/public/restaurante_pdf_extração2.png"
                 ],
                 "githubUrl": "#"
             }
