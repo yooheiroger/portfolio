@@ -5,18 +5,42 @@
                 "id": 101,
                 "year": "2026",
                 "title": "Extrair, Transformar e Carregar (ETL) de Dados",
-                "type": "Automação / Back-end",
-                "description": "Pipeline automatizado de ETL para processamento da base pública de dados da Receita Federal. O fluxo realiza a extração dos dados governamentais, converte os arquivos massivos para o formato estruturado Parquet (visando alta performance de leitura) e disponibiliza o dataset otimizado no servidor para consumo de sistemas internos.",
+                "type": "Automação",
+                "description": [
+                    "Situação: Havia a necessidade de consumir e analisar a base pública de dados da Receita Federal para dar suporte a decisões e sistemas internos. No entanto, não existia um processo estruturado para lidar com o volume massivo de arquivos brutos disponibilizados pelo governo.",
+                    "Tarefa: Minha missão foi arquitetar e implementar uma solução de ponta a ponta que automatizasse a coleta desses dados, garantindo que as informações estivessem sempre atualizadas e em um formato de alta performance.",
+                    "Ação: Desenvolvi uma solução utilizando Python para a orquestração e o DuckDB como motor de processamento principal. Implementei a transformação dos arquivos massivos para o formato Parquet, otimizando o armazenamento e a leitura. Utilizei o DuckDB para realizar consultas SQL analíticas diretamente nos arquivos Parquet, eliminando a necessidade de manter um banco de dados relacional tradicional pesado para essa finalidade.",
+                    "Resultado: Viabilizei o acesso a milhões de registros de forma estruturada, alcançando alta performance, onde pesquisas simples são executadas em menos de um segundo. A solução entregou um sistema de alta performance e baixo custo, transformando dados brutos em um ativo estratégico que antes não estava disponível para a empresa."     
+                ],
                 "tags": [
                     "Python",
-                    "Docker"
+                    "Docker",
+                    "Pandas",
+                    "DuckDB",
+                    "parquet"
                 ],
                 "videoUrl": null,
-                "images": [
-                    "/public/spaceship_kaggle.png",
-                    "/public/spaceship_code.png",
-                    "/public/spaceship_accuracy.png"
+                "images": [],
+                "githubUrl": "#"
+            },
+            {
+                "id": 102,
+                "year": "2026",
+                "title": "Extrair relatórios e manipular dados",
+                "type": "Automação / RPA",
+                "description": [
+                    "Situação: O processo de geração de relatórios gerenciais ocorria em duas janelas críticas (madrugada e manhã). Um colaborador precisava realizar manualmente o login no ERP, navegar por diversas telas e parametrizar a extração de múltiplos arquivos .xlsx. Apenas a etapa de extração consumia cerca de 6 minutos por período, sem contar o tempo subsequente necessário para manipular e consolidar esses dados manualmente em uma planilha mestra complexa.",
+                    "Tarefa: Desenvolver uma solução de RPA capaz de executar o ciclo completo de forma autônoma: realizar as extrações específicas de cada horário e processar a inteligência de dados para alimentar uma planilha mestre com múltiplas abas e mapeamentos específicos.",
+                    "Ação: Projetei e implementei um robô em Python que automatiza a interação com a interface do sistema para a coleta dos dados. Utilizei a biblioteca Pandas para criar um motor de transformação que processa os diversos arquivos gerados, realizando o mapeamento lógico e a inserção precisa dos dados em seus respectivos destinos na planilha consolidada. A solução foi configurada para operar de forma programada, distinguindo automaticamente quais relatórios extrair com base no horário da execução.",
+                    "Resultado: Alcancei a automação total do fluxo, garantindo que os dados estejam prontos para análise no início do expediente. Enquanto o processo manual levava 6 minutos apenas para a extração em cada janela, o RPA executa o ciclo completo (extração + manipulação de dados) em apenas 9 minutos. Isso eliminou o esforço humano de conferência e montagem manual da planilha, garantindo 100% de integridade nas informações."     
                 ],
+                "tags": [
+                    "Python",
+                    "Docker",
+                    "Pandas"
+                ],
+                "videoUrl": null,
+                "images": [],
                 "githubUrl": "#"
             }
         ],
@@ -34,7 +58,7 @@
                     "Python",
                     "PostgreSQL"
                 ],
-                "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "videoUrl": "https://www.youtube.com/embed/sTpDR9Mbk64?si=2XoT3GPBULFSLvEF",
                 "images": [],
                 "githubUrl": "#"
             },
@@ -79,8 +103,29 @@
                     "React",
                     "JavaScript"
                 ],
-                "videoUrl":"https://www.youtube.com/embed/mM37k1XR0ho?si=ToaAYH4ORPXKfykB",
+                "videoUrl":"https://www.youtube.com/embed/CoxB23KUpjw?si=ULjBEo159PzF8hz1",
                 "images": [],
+                "githubUrl": "#"
+            },
+            {
+                "id": 4,
+                "year": "2026",
+                "title": "Extração e Categorização Automatizada de Dados (PDF para Excel)",
+                "type": "Automação",
+                "description": [
+                    "Situação: O restaurante gerava relatórios de vendas em PDF que eram limitados e de difícil análise. Os arquivos continham apenas dados brutos (nome, código, valor), sem separação por categorias. Além disso, a data da venda constava apenas no cabeçalho do documento, o que impedia uma análise individualizada de cada transação em uma planilha consolidada.",
+                    "Tarefa: Minha missão foi desenvolver uma automação para extrair, categorizar e, principalmente, enriquecer os dados. O objetivo era criar uma estrutura onde cada item vendido estivesse vinculado à sua categoria e à sua respectiva data de venda, permitindo uma visão temporal do negócio.",
+                    "Ação: Desenvolvi uma solução em Python com foco em processamento de documentos. Utilizei Regex (Expressões Regulares) para capturar de forma inteligente a data no início do PDF e replicá-la para cada registro de venda extraído. Implementei uma lógica de classificação para atribuir categorias aos produtos e configurei um sistema de monitoramento de pastas: assim que um novo arquivo é detectado, o script realiza a limpeza, o enriquecimento com a data e a exportação para um formato estruturado.",
+                    "Resultado: Transformei relatórios estáticos em uma base de dados cronológica e organizada. Com o enriquecimento da data por item, viabilizei a realização de análises de tendências (vendas por dia/semana) e identificação de picos de demanda. Essa ferramenta entrega insights estratégicos sobre o cardápio e o faturamento de forma totalmente automática."               ],
+                "tags": [
+                    "React",
+                    "JavaScript"
+                ],
+                "videoUrl": null,
+                "images": [
+                    "/public/restaurante_pdf_excel.png",
+                    "/public/restaurante_pdf_extração2.png"
+                ],
                 "githubUrl": "#"
             }
         ]

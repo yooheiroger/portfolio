@@ -20,7 +20,7 @@ const Home = () => {
                         mb={3}
                         letterSpacing="0.2em"
                     >
-                        {`// SOFTWARE ENGINEER STUDENT`}
+                        {`// SOFTWARE ENGINEERING STUDENT`}
                     </Text>
                     <Heading
                         size="3xl"
@@ -62,7 +62,7 @@ const Home = () => {
                     <Flex justify="space-between" align="start" wrap="wrap" gap={4}>
                         <VStack align="flex-start" spacing={1}>
                             <Heading size="md" color="slate.800">Integrada Cooperativa</Heading>
-                            <Text fontWeight="bold" color="blue.600" fontSize="sm" fontFamily="mono">Estágiario TI/ RPA</Text>
+                            <Text fontWeight="bold" color="blue.600" fontSize="sm" fontFamily="mono">Estagiário TI/ RPA</Text>
                         </VStack>
                         <Badge variant="subtle" colorScheme="gray" px={3} py={1} borderRadius="full">
                             ABR 2025 — PRESENTE
