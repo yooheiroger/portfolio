@@ -26,7 +26,7 @@ const Header = () => {
         position="fixed" 
         top="20px" 
         right="20px" 
-        zIndex={9999}
+        zIndex='zindex'
       >
         <IconButton
         boxShadow="0 4px 12px rgba(0,0,0,0.15)"
