@@ -118,8 +118,9 @@
                     "Ação: Desenvolvi uma solução em Python com foco em processamento de documentos. Utilizei Regex (Expressões Regulares) para capturar de forma inteligente a data no início do PDF e replicá-la para cada registro de venda extraído. Implementei uma lógica de classificação para atribuir categorias aos produtos e configurei um sistema de monitoramento de pastas: assim que um novo arquivo é detectado, o script realiza a limpeza, o enriquecimento com a data e a exportação para um formato estruturado.",
                     "Resultado: Transformei relatórios estáticos em uma base de dados cronológica e organizada. Com o enriquecimento da data por item, viabilizei a realização de análises de tendências (vendas por dia/semana) e identificação de picos de demanda. Essa ferramenta entrega insights estratégicos sobre o cardápio e o faturamento de forma totalmente automática."               ],
                 "tags": [
-                    "React",
-                    "JavaScript"
+                    "Python",
+                    "Pandas",
+                    "Automação"
                 ],
                 "videoUrl": null,
                 "images": [
